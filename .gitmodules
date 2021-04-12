@@ -1,0 +1,3 @@
+[submodule "lib/Terra"]
+	path = lib/Terra
+	url = https://github.com/PolyhedralDev/Terra.git

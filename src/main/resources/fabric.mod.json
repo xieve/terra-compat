@@ -1,37 +1,36 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "terracompat",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Terra Compatibility Module",
+  "description": "Re-enables vanilla cave and structure generation to ensure compatibility with corresponding mods",
   "authors": [
-    "Me!"
+    "xieve"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/xieve/terra-compat"
   },
 
-  "license": "CC0-1.0",
+  "license": "LGPL-3.0-or-later",
   "icon": "assets/modid/icon.png",
 
-  "environment": "*",
+  "environment": "server",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.xieve.terracompat.InitStub"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "terracompat.mixin.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": ">=1.16.0",
+    "terra": "*"
   },
   "suggests": {
-    "another-mod": "*"
   }
 }

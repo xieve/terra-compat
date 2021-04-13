@@ -33,7 +33,7 @@ dependencies {
 	//modImplementation "com.github.PolyhedralDev.Terra:fabric:master-SNAPSHOT"
 
 	//compileOnly "com.dfsek.terra.bukkit:bukkit:5.1.3-BETA+5ac72575"
-	modCompileOnly "com.dfsek.terra.fabric:fabric:5.1.3-BETA+5ac72575"
+	compileOnly "com.dfsek.terra.fabric:fabric:5.1.3-BETA+5ac72575"
 
 	//modCompileOnly "curse.maven:terra-450465:3255213"
 

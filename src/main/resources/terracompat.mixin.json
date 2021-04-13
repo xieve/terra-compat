@@ -4,9 +4,10 @@
   "package": "net.xieve.terracompat.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "ConfigMixin",
+    "ChunkGeneratorMixin"
   ],
   "client": [
-    "ChunkGeneratorMixin"
   ],
   "injectors": {
     "defaultRequire": 1

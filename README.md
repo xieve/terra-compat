@@ -1,4 +1,4 @@
-# Fabric Compatibility Module
+# Terra Compatibility Module
 Re-enables vanilla caves and structures in Terra to enable cross-compatibility with other mods, such as YUNG'S Better Caves or Mo' Structures.
 
 Note that this is for Fabric only, and will not be ported to Spigot.

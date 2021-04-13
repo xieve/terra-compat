@@ -11,34 +11,18 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
-	// Add repositories to retrieve artifacts from in here.
-	// You should only use this when depending on other mods because
-	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
-	// for more information about repositories.
 	maven { url "https://repo.codemc.io/repository/maven-public/" }
-	maven { url "https://jitpack.io/" }
-	maven { url "https://www.cursemaven.com/" }
 }
 
 dependencies {
-	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	//modImplementation "com.github.PolyhedralDev.Terra:fabric:master-SNAPSHOT"
-
-	//compileOnly "com.dfsek.terra.bukkit:bukkit:5.1.3-BETA+5ac72575"
-	compileOnly "com.dfsek.terra.fabric:fabric:5.1.3-BETA+5ac72575"
-
-	//modCompileOnly "curse.maven:terra-450465:3255213"
-
-	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
-	// You may need to force-disable transitiveness on them.
+	modCompileOnly "com.dfsek.terra.fabric:fabric:5.1.3-BETA+5ac72575:dev@jar"
+    modCompileOnly "com.dfsek.terra.common:common:5.1.3-BETA+5ac72575"
 }
 
 processResources {
@@ -56,7 +40,6 @@ tasks.withType(JavaCompile).configureEach {
 	// If Javadoc is generated, this must be specified in that task too.
 	it.options.encoding = "UTF-8"
 
-	// The Minecraft launcher currently installs Java 8 for users, so your mod probably wants to target Java 8 too
 	// JDK 9 introduced a new way of specifying this that will make sure no newer classes or methods are used.
 	// We'll use that if it's available, but otherwise we'll use the older option.
 	def targetVersion = 8

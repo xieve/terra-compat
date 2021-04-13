@@ -1,4 +1,4 @@
-package net.xieve.terracompat;
+package net.xieve.terracompat.mixins;
 
 import com.dfsek.terra.api.platform.world.generator.GeneratorWrapper;
 import com.dfsek.terra.fabric.world.generator.FabricChunkGeneratorWrapper;
@@ -22,13 +22,12 @@ public abstract class ChunkGeneratorMixin extends ChunkGenerator implements Gene
 
 	@Override
 	public void carve(long seed, BiomeAccess access, Chunk chunk, GenerationStep.Carver carver) {
-	    System.out.println("Debug: Vanilla carve method accessed.");
+	    // TODO: Steal Simplex' optimized vanilla carver
 		super.carve(seed, access, chunk, carver);
 	}
 
 	@Override
 	public void setStructureStarts(DynamicRegistryManager dynamicRegistryManager, StructureAccessor structureAccessor, Chunk chunk, StructureManager structureManager, long worldSeed) {
-		System.out.println("Debug: Vanilla structure population method accessed.");
 		super.setStructureStarts(dynamicRegistryManager, structureAccessor, chunk, structureManager, worldSeed);
 	}
 }

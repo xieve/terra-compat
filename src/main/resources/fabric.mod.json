@@ -15,7 +15,7 @@
   "license": "LGPL-3.0-or-later",
   "icon": "assets/modid/icon.png",
 
-  "environment": "server",
+  "environment": "*",
   "entrypoints": {
     "main": [
       "net.xieve.terracompat.InitStub"

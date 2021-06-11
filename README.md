@@ -1,3 +1,6 @@
+| :exclamation: This project is deprecated and janky. Terra has implemented all its features and more in v5.3.3, please do not use this. |
+| --- |
+
 # Terra Compatibility Module
 Re-enables vanilla caves and structures in Terra to enable cross-compatibility with other mods, such as YUNG'S Better Caves or Mo' Structures.
 

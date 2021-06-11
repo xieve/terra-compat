@@ -23,10 +23,10 @@ dependencies {
 
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	//modCompileOnly "com.dfsek.terra.common:common:5.1.3-BETA+5ac72575"
-	//modCompileOnly "com.dfsek.terra.fabric:fabric:5.1.3-BETA+5ac72575:dev@jar"
-	modCompileOnly "com.github.PolyhedralDev.Terra:common:ver~5.1.4-SNAPSHOT"
-    modCompileOnly "com.github.PolyhedralDev.Terra:fabric:ver~5.1.4-SNAPSHOT:dev@jar"
+	modCompileOnly "com.dfsek.terra.common:common:5.2.0-BETA+eee54f50"
+	modCompileOnly "com.dfsek.terra.fabric:fabric:5.2.0-BETA+eee54f50:dev@jar"
+	//modCompileOnly "com.github.PolyhedralDev.Terra:common:ver~5.1.4-SNAPSHOT"
+    //modCompileOnly "com.github.PolyhedralDev.Terra:fabric:ver~5.1.4-SNAPSHOT:dev@jar"
 	modCompileOnly "com.dfsek:Tectonic:1.2.3"
 }
 
